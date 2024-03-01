@@ -34,7 +34,7 @@ Using SVG Forge is straightforward. After installing, follow these steps to crea
 
 That's it! You've created a custom logo with SVG Forge.
 
-
+https://github.com/marphco/svg-forge/assets/5993166/6a6e524f-5ea3-4df2-95aa-83c5ea472165
 
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
