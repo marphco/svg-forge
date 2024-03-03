@@ -1,4 +1,5 @@
 // Import shape classes for testing, including the SVGCreator for full SVG generation
+const { camelCase } = require("yargs-parser");
 const { Circle, Square, Triangle, SVGCreator } = require("./shapes");
 
 // Test suite for individual shape classes
