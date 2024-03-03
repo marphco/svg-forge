@@ -35,5 +35,25 @@ class Triangle extends Shape {
   }
 }
 
-// Exporting the Circle, Square, and Triangle classes for external use
-module.exports = { Circle, Square, Triangle };
+// Hypothetical class for creating complete SVGs with shapes and text
+class SVGCreator {
+  constructor(text, textColor, shape, fontSize = '16px', fontFamily = 'Arial') {
+    this.text = text;
+    this.textColor = textColor;
+    this.shape = shape;
+    this.fontSize = fontSize;
+    this.fontFamily = fontFamily;
+  }
+
+  render() {
+    return `
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  ${this.shape.render()}
+  <text x="150" y="100" fill="${this.textColor}" dominant-baseline="middle" text-anchor="middle" font-size="${this.fontSize}" font-family="${this.fontFamily}">${this.text}</text>
+</svg>
+    `.trim();
+  }
+}
+
+// Exporting the Circle, Square, Triangle, and SVGCreator classes for external use
+module.exports = { Circle, Square, Triangle, SVGCreator };
